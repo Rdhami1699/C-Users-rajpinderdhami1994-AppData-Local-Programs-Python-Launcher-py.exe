@@ -1,12 +1,4 @@
 import random
-player1=""
-player2=""
-rock = ""
-paper = ""
-scissors = ""
-rock == 'r'
-paper == 'p'
-scissors == 's'
 def play():
     user = input(f"'r' for rock, 'p' for paper, 's' for scissors,What would you choose??")
     computer = random.choice(['r', 'p', 's'])
@@ -21,4 +13,4 @@ def iswin(player, opponent):
     if (player == 'r' and opponent == 's') or (player == 'p' and opponent == 'r') or (player == 's' and opponent == 'p'):
        return True
 
-print(play)
+print(play())
