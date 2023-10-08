@@ -1,0 +1,24 @@
+import random
+player1=""
+player2=""
+rock = ""
+paper = ""
+scissors = ""
+rock == 'r'
+paper == 'p'
+scissors == 's'
+def play():
+    user = input(f"'r' for rock, 'p' for paper, 's' for scissors,What would you choose??")
+    computer = random.choice(['r', 'p', 's'])
+    
+    if user == computer:
+       return "it's a tie"
+    if iswin(user, computer):
+       return "you won"
+    return "you lost!Good luck next time"
+
+def iswin(player, opponent):
+    if (player == 'r' and opponent == 's') or (player == 'p' and opponent == 'r') or (player == 's' and opponent == 'p'):
+       return True
+
+print(play)
